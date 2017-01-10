@@ -1,0 +1,9 @@
+@(p: Person, ps: List[Person])
+
+<h1>Welcome @p.name! </h1>
+
+<ul>
+@for(p <- ps) {
+    <li>@p.id</li>
+}
+</ul>

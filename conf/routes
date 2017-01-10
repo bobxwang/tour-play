@@ -1,0 +1,19 @@
+# Home Page
+GET        /                           controllers.IndexController.index
+
+GET        /indexview                  controllers.IndexController.indexView
+
+GET        /home                       controllers.IndexController.home
+
+# Persons Page
+GET        /persons                    controllers.PersonController.getPersons
+
+GET        /persons/$id<[0-9]+>        controllers.PersonController.getPersonById(id:Int)
+
+# Map static resources from the /public folder to the /assets URL path
+GET        /assets/*file               controllers.Assets.at(path="/public", file)
+
+# Responds with 500 Internal Server Error
+GET        /clients                    controllers.Default.error
+
+# Play support two type routers, one is dependency injected routed and another is static, default is dependency
