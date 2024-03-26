@@ -16,9 +16,9 @@ import scala.concurrent.duration.Duration
 object Generation {
 
   val db = Database.forURL(
-    "jdbc:mysql://192.168.2.200:3306/51banka?useUnicode=true&characterEncoding=UTF-8"
+    "jdbc:mysql://192.168.2.200:3306/xxx?useUnicode=true&characterEncoding=UTF-8"
     , "root"
-    , "zufangbao69fc")
+    , "xxx")
 
   val filteredTables = MySQLDriver.defaultTables.map(p => {
     p.filter(t => {
